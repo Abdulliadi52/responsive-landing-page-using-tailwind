@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+  <body class="">
+    <div class="relative">
+      <img
+        src="images/borabora.jpg"
+        alt="borabora"
+        class="min-w-full max-h-screen h-screen object-cover fixed top-0 left-0"
+        id="img"
+      />
+      <div class="absolute top-0 px-4 md:px-24 pt-6 w-full">
+        <header class="flex justify-between items-center mb-8 md:mb-20">
+          <div class="flex justify-between items-center w-full">
+            <div class="text-xl text-white font-semibold cursor-pointer">
+              <a href="index.html">Travel</a>
+            </div>
+            <div class="font-bold text-white md:hidden text-lg" id="burger">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+          <div class="hidden md:block">
+            <nav>
+              <ul class="flex justify-center items-center gap-10 text-white">
+                <li
+                  class="text-lg capitalize font-semibold hove transition ease-in-out duration-500 cursor-pointer"
+                >
+                  home
+                </li>
+                <li
+                  class="text-lg capitalize font-semibold hove transition ease-in-out duration-500 cursor-pointer"
+                >
+                  Explore
+                </li>
+                <li
+                  class="text-lg capitalize font-semibold hove transition ease-in-out duration-500 cursor-pointer"
+                >
+                  destinations
+                </li>
+                <li
+                  class="text-lg capitalize font-semibold hove transition ease-in-out duration-500 cursor-pointer"
+                >
+                  Hotels
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div
+            class="md:hidden absolute top-0 left-0 w-screen h-screen px-4 pt-6 bg-blue-400 -translate-x-full transition ease-in-out duration-700 opacity-0 z-10"
+            id="menu"
+          >
+            <div class="flex w-full items-center justify-between mb-10">
+              <div class="text-xl text-white font-semibold cursor-pointer">
+                <a href="index.html">Travel</a>
+              </div>
+              <div class="text-red-500 font-bold text-lg" id="close">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+            <nav>
+              <ul
+                class="flex flex-col w-full items-center justify-center gap-5"
+              >
+                <li class="hovered">home</li>
+                <li class="hovered">explores</li>
+                <li class="hovered">destinations</li>
+                <li class="hovered">Hotels</li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <main>
+          <section>
+            <h4 class="text-3xl text-white font-semibold mb-3 md:mb-5">
+              Islands
+            </h4>
+            <h1
+              class="font-semibold text-white text-5xl md:text-7xl mb-3 md:mb-5"
+              id="name"
+            >
+              Bora Bora
+            </h1>
+            <p
+              class="max-w-80 text-white leading-6 md:leading-7 font-bold mb-4"
+              id="info"
+            >
+              Bora Bora is a small South Pacific island located in French
+              Polynesia, approximately 230 kilometers (143 miles) northwest of
+              Tahiti. It is part of the Society Islands group and is surrounded
+              by a lagoon and a barrier reef
+            </p>
+            <button
+              class="capitalize text-blue-400 flex items-center bg-white px-4 py-2 font-bold rounded-md"
+            >
+              <span class="pr-2">explore</span>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+          </section>
+          <section
+            class="flex items-stretch justify-center gap-5 w-full fixed bottom-6"
+          >
+            <div
+              class="flex items-center justify-center gap-5 px-2 py-3 rounded-md bg-white"
+            >
+              <div class="cursor-pointer" id="change-1">
+                <img src="images/borabora.jpg" class="w-w1 rounded-lg" alt="" />
+              </div>
+              <div class="cursor-pointer" id="change-2">
+                <img src="images/bali.jpg" class="w-w1 rounded-lg" alt="" />
+              </div>
+              <div class="cursor-pointer" id="change-3">
+                <img
+                  src="images/palawan.jpg"
+                  class="w-w1 h-9 rounded-lg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
